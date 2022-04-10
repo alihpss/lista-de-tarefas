@@ -1,0 +1,101 @@
+:root {
+    --corPrincipal: #51d479;
+}
+
+body {
+    background: var(--corPrincipal) ;
+    font: normal 15pt arial;
+}
+
+h1 {
+    font-size: 30pt;
+    text-align: center;
+    margin: 100px 0;
+}
+
+input {
+    margin: 12px 0;
+}
+
+.tarefas input[type='checkbox']:checked + div {
+    text-decoration: line-through;
+}
+
+.tarefas div {
+    margin:0 0 20px 10px ;
+    display: inline-block;
+    width: 95%;
+    padding: 10px 0;
+}
+
+.tarefas input[type='button'] {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 67%;
+    background: white;
+    cursor: pointer;    
+    padding: 1px;
+    border: 1px solid var(--corPrincipal);
+    transition: 1s;
+}
+
+.tarefas input[type='button']:hover {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 67%;
+    background: #e28c72;
+    cursor: pointer;    
+    padding: 1px;
+    border: 1px solid var(--corPrincipal);
+}
+
+section {
+    margin: auto;
+    width: 600px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px ;
+}
+
+footer {
+    margin-top: 60px;
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+    section {
+        width: 300px;
+    }
+
+    .tarefas div{
+            margin:0 0 20px 5px ;
+            display: inline-block;
+            width: 95%;
+            padding: 10px 0;
+    }
+    .tarefas input[type='button'] {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 75%;
+        background: white;
+        cursor: pointer;    
+        padding: 1px;
+        border: 1px solid var(--corPrincipal);
+        transition: 1s;
+    }
+    
+    .tarefas input[type='button']:hover {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 75%;
+        background: #e28c72;
+        cursor: pointer;    
+        padding: 1px;
+        border: 1px solid var(--corPrincipal);
+    }
+}
